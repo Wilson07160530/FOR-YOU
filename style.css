@@ -61,7 +61,6 @@ body::before {
 
 #bodyblur {
   opacity: 0.3;
-  /*animation: jj 7s infinite;*/
   position: fixed;
   top: 0;
   left: 0;
@@ -70,7 +69,18 @@ body::before {
   background: rgba(0, 0, 0, 0.3);
   z-index: -1;
   transition: all 1s ease;
+  overflow: hidden; /* optional to prevent scrollbars */
 }
+
+#bodyblur img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 
 #wallpaper {
   width: 100%;
@@ -148,6 +158,7 @@ blockquote {
   text-align: center;
   line-height: 1.3em;
   padding: 0 25px;
+  height: 100;
 }
 
 blockquote img {
@@ -159,7 +170,7 @@ blockquote img {
   padding: 10px;
   width: 100px;
   height: 100px;
-  margin: 20px 0 0 0;
+  margin: 5px 0 0 0;
 }
 
 #fotoakhir {
@@ -257,11 +268,11 @@ p {
   animation-name: none;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  position: relative;
+  position: center;
   opacity: 0;
   margin-top: 50px;
   width: 100%;
-  height: 180px;
+  height: 100px;
   transition: all 0.8s ease;
 }
 
@@ -270,7 +281,7 @@ p {
   align-items: center;
   text-align: center;
   justify-content: center;
-  margin-top: 1px;
+  margin-top: 130px;
 }
 
 #photolove img {
@@ -430,3 +441,4 @@ p {
 .adB a {
   color: white;
 }
+
