@@ -148,7 +148,7 @@ blockquote {
   margin-left: 0;
   margin-right: 0;
   width: 400px;
-  background: var(--color-bg);
+/*   background: var(--color-bg); */
   border-right: var(--frame-right);
   border-left: var(--frame-left);
   box-shadow: rgba(255, 255, 255, 0.15) 0px 7px 29px 0px;
