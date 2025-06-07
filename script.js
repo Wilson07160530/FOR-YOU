@@ -14,14 +14,28 @@ function automatic() {wordanime();setTimeout(anime,400);}
   function theend(){Bn.style.display="none";setTimeout(latest,500);} function latest(){tmbl.innerHTML="💌 Send";Knob.style="margin-top:10px;opacity:1;transform: scale(1)";ftom=5;fungsi=0;}
   
   async function received(){
-      lost();ftchange=1;
-      setTimeout(ftappear,400);
-      Bn2.style.display="none";
-      wallpaper.style="transform: scale(1)";
-      bq.style = "position:relative;opacity:1;visibility:visible;transform: scale(1);transition:all .7s ease;border-radius:var(--bingkai);margin-top:0;";
-      Knob.style="opacity:0;transition:all .5s ease;transform: scale(.1);";
-      automatic2();
-   }
+  lost(); ftchange = 1;
+  setTimeout(ftappear, 400);
+  Bn2.style.display = "none";
+  wallpaper.style = "transform: scale(1)";
+  bq.style = "position:relative;opacity:1;visibility:visible;transform: scale(1);transition:all .7s ease;border-radius:var(--bingkai);margin-top:0;";
+  Knob.style = "opacity:0;transition:all .5s ease;transform: scale(.1);";
+  automatic2();
+
+  // Send Email via EmailJS
+  emailjs.send("WilsonDelacruz", "template_qw6xld8", {
+    from_name: "Para Sayo App",
+    message: "Ruth clicked Yes. She’s now your girlfriend.",
+    reply_to: "no-reply@parasayo.com"
+  }).then(
+    function(response) {
+      console.log("SUCCESS!", response.status, response.text);
+    },
+    function(error) {
+      console.error("FAILED...", error);
+    }
+  );
+  }
 
   flag=1;flagg=1;
   function rejected(){
